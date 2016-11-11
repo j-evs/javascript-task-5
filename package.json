@@ -1,9 +1,11 @@
 {
+  "name": "js-task-5",
+  "version": "0.0.1",
   "private": true,
   "main": "emitter.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "eslint . && mocha *.spec.js"
+    "lint": "eslint . || true",
+    "test": "mocha *.spec.js || true"
   },
   "dependencies": {
     "eslint": "3.7.0",

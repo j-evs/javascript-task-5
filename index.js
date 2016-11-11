@@ -28,6 +28,7 @@ var lecturer = getEmitter();
 lecturer
     .on('begin', students.Sam, function () {
         this.focus += 10;
+
     })
     .on('begin', students.Sally, function () {
         this.focus += 10;
@@ -62,6 +63,7 @@ lecturer
 // На каждый веселый слайд всё наоборот
 lecturer
     .on('slide.funny', students.Sam, function () {
+
         this.focus += 5;
         this.wisdom -= 10;
     })
@@ -104,7 +106,6 @@ lecturer
 
 lecturer.emit('end');
 // Sam(20,102); Sally(70,191); Bill(40,62); Sharon(90,40)
-
 if (getEmitter.isStar) {
     students = {
         Sam: {

@@ -1,3 +1,11 @@
 {
-  "extends": "hrundel/node"
+  "extends": "hrundel/node",
+ "parserOptions": {
+      "ecmaVersion": 6
+  },
+  "rules": {
+    "linebreak-style": [1, "windows"],
+    "valid-jsdoc": 0,
+    "no-invalid-this": 0
+  }
 }
